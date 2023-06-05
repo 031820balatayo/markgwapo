@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Friend Registry</title>
+    <style>
+
+        h1 {
+        text-align: center;
+        }
+
+      form {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Friend Registry</h1>
+    <form>
+      <fieldset>
+        <legend>Enter your friend's details:</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your friend's name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your friend's email" required>
+    
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Enter your friend's phone number" required>
+    
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" placeholder="Enter your friend's birthdate" required>
+    
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input  type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    
+        <label for="favorite-color">Favorite color:</label>
+        <select id="favorite-color" name="favorite-color">
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+        </select>
+    
+        <label for="about">About:</label>
+        <textarea id="about" name="about" rows="4" cols="50" placeholder="Tell us something about your friend"></textarea>
+    
+        <label for="submit">Submit:</label>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
