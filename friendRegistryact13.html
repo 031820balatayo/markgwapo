@@ -6,57 +6,78 @@
 		    body {
 			    background-color: #a383f0;
 			}
-			form {
-				border: 10px solid #1d1057;
-				padding: 20px;
-				max-width: 500px;
-				margin: 0 auto;
-			}
+			.container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 100vh;
+		padding: 20px;
+	}
 
-			label {
-				display: block;
-				margin-bottom: 10px;
-				font-weight: bold;
-			}
+	form {
+		border: none;
+		padding: 20px;
+		max-width: 500px;
+	}
 
-			input[type="text"],
-			input[type="email"],
-			input[type="tel"],
-			textarea {
-				width: 100%;
-				padding: 10px;
-				margin-bottom: 50px;
-				border: 3px solid #5468c2;
-				border-radius: 5px;
-				box-sizing: border-box;
-				font-size: 18px;
-				background-color: #eee8e8;
-			}
+	label {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
 
-			input[type="submit"] {
-				background-color: #4b5581;
-				color: white;
-				padding: 12px 20px;
-				border: none;
-				border-radius: 4px;
-				cursor: alias;
-				font-size: 18px;
-			}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 14px;
+		background-color: #f8f8f8;
+	}
 
-			input[type="submit"]:hover {
-				background-color: #915ce6;
-			}
+	input[type="date"] {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+		font-size: 14px;
+		background-color: #f8f8f8;
+	}
 
-			h1 {
-				text-align: center;
-				font-family: "Times New Roman", Times, serif;
-				font-style: inherit;
-			}
-		</style>
+	input[type="submit"] {
+		background-color: #4b5581;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 14px;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #915ce6;
+	}
+
+	h1 {
+		text-align: left;
+		font-family: "Times New Roman", Times, serif;
+		font-style: inherit;
+		margin-top: 20px;
+	}
+</style>
+
+
 	</head>
 	<body>
 		<h1>FRIEND REGISTRY</h1>
-		<form action="https://script.google.com/macros/s/AKfycbyxz2c35mth00dBvNWGB1-Bs2jUqD6eNpJwhxsHyqNrDz0nUgXbTmizKRrSerkssi9Daw/exec" method='post'>
+		<form action="https://script.google.com/macros/s/AKfycby13urVe46GNmQoO_1Cl2NBA3g6aZBjXD4e7D_-8Ke93zg5RNYK3gxIJjxfIv6yl4CV7A/exec" method='post'>
 			<label for="name">NAME:</label>
 			<input type="text" id="name" name="name" />
 
